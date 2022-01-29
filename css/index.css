@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box; 
+    
+}
+
+body{
+    background:#1b1b2b;
+    padding:75px;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 30px;
+  }
+
+    
+/* Header, NAV */
+
+  h1{
+    color:#c0c0c0;
+    font-weight:100;
+    font-size: 45px;
+  }
+
+  h2 {
+    color:#c0c0c0;
+    font-weight:90;
+    font-size: 36px;
+  }
+    
+   /*Properties for Nav-bar*/  
+   .navbar2{  
+    display:flex;  
+    top:0;      
+    justify-content:space-between;  
+    align-items:center;   
+    padding:0px 20px;  
+    background:grey;  
+    border-radius: 10px;
+   }  
+
+   .nav-sub{  
+    display:flex;      
+   }  
+   .list-item {  
+    padding:10px;  
+    list-style:none;  
+   }  
+   .nav-link{  
+    color:inherit;  
+    text-decoration:none;  
+   }  
+
+   .nav-link:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    background-color: #1b1b2b;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: grey;
+  }
+
+   .ham{  
+    display:none;  
+    padding:5px;  
+    cursor:pointer;  
+   }  
+   
+
+  .logo  {
+    display: grid;
+    grid-row: 2;
+    width: 100%;
+    justify-items: center;
+    
+    
+ }
+
+ .logo img {
+   width: 300px;    
+   
+ }
+
+  /* MAIN */
+
+  .box-container {
+    display: flex;
+    flex-direction: column;     
+    margin-top: 30px;
+    align-content: space-around;
+    align-items: center;
+
+  }
+
+  .picture {
+    height: 70%;    
+    width: 85%;
+    max-width: 100%;
+    
+  }
+  
+
+  .info {
+    display: flex;
+    flex-direction: column;    
+    
+  }
+
+  .others {
+    display: inline;
+  }
+
+
+  .info h2{
+    text-align: center;
+  }
+
+  .info h4 {
+    color: #c0c0c0;
+  }  
+
+  .others h4{
+    margin: auto;
+    width: 80%;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 7px 1px #65408a;
+    padding: 10px;
+    border-radius: 10px;
+    color: #c0c0c0 ;    
+  }
+
+  .company_2 h4 {
+    text-align: left;
+    color: #c0c0c0;
+  }
+
+  
+
+  .others h2 {
+    color:#c0c0c0 ;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+ /*footer*/
+
+ .footer {
+  background-color: #999 ;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-top: 45px;
+}
+
+.inner-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-items {
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-items h4 {
+  color: black;
+  padding-left: 30px;
+}
+
+li {
+
+  display: list-item;
+  list-style-type: none;
+  text-align: center;  
+  padding-top: 7px;
+  padding-bottom: 7px;    
+}
+
+.footer-items h3 {
+  color: black;
+  padding-left: 30px;
+  margin-bottom: 0px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}  
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+
+@media only screen and (max-width:768px) {
+  .box-container {
+    display: grid;
+    grid-template-columns: auto;
+    
+  }
+
+  .box-container .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+  } 
+
+  .company {
+    margin-top: -1rem;
+    margin-left: 0;
+    justify-self: center;
+  } 
+
+  .others {
+    margin-top: 2rem;
+    margin-left: 0;
+    justify-self: center;
+  }      
+
+  
+}
+
+@media (max-width: 1024px) {
+  .box-container {
+    display: grid;
+    grid-template-columns: auto;
+    
+  }
+
+  .box-container .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+  } 
+
+  .company {
+    margin-top: -1rem;
+    margin-left: 0;
+    justify-self: center;
+  } 
+
+  .others {
+    margin-top: 2rem;
+    margin-left: 0;
+    justify-self: center;
+  }      
+}
+
+@media only screen and (max-width:768px){  
+  *{  
+    overflow:hidden;  
+   }  
+  .nav-sub{  
+    right:0px;  
+    flex-direction:column;    
+    transition:transform 0.3s ease-in;  
+    
+   }  
+  .nav-change{  
+    transform:translate(0%);  
+   }  
+  .ham{  
+    display:block;  
+   }  
+  .change .bar1 {  
+   transform: rotate(45deg) translate(8px,3px);  
+  }  
+  .change .bar2 {  
+   opacity: 0;  
+  }  
+  .change .bar3 {  
+   transform: rotate(-45deg) translate(8px,-3px);  
+  }  
+  }  
+
+
+
+
+
+
+
